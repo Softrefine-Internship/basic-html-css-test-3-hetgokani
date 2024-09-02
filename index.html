@@ -5,8 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Het Test 3 | Html & Css Test</title>
     <link rel="stylesheet" href="/styles/styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="main-container"></section>
+    <section class="main-container">
+      <div class="bg-shapes">
+        <div class="yellow-circle"></div>
+        <div class="grey-box"></div>
+        <div class="square1"></div>
+        <div class="bubble"></div>
+        <div class="bubble2"></div>
+      </div>
+      <!-- main area for content -->
+
+      <article class="profile-content">
+        <!-- header content with nav bar -->
+        <div class="header-bg">
+          <header class="header-flex">
+            <img class="logo" src="/images/logo.png" alt="logo" />
+            <nav class="header-flex">
+              <button class="need-help-button">NEED HELP</button>
+              <div>
+                <ion-icon
+                  class="nav-bar-icon"
+                  name="notifications-outline"
+                ></ion-icon>
+                <div class="notifications-dot"></div>
+              </div>
+              <img class="nav-user" src="/images/users/user.jpg" alt="user" />
+            </nav>
+          </header>
+          <!-- section of profile info -->
+          <img class="main-user" src="/images/users/user.jpg" alt="user" />
+          <main class="profile-info">
+            <div>
+              <h1 class="profile-greeting">Hi, Emma good morning👋🏻</h1>
+              <h2 class="profile-details">
+                <span class="profile-details-title">Email - </span
+                >hetgokani@gmail.com
+              </h2>
+              <h2 class="profile-details">
+                <span class="profile-details-title">Phone - </span>+91-789215654
+              </h2>
+              <h2 class="profile-details">
+                <span class="profile-details-title">Address - </span>81 Queens,
+                7 block ,NYC
+              </h2>
+              <h2 class="profile-details">
+                <span class="profile-details-title">Plan - </span>100$
+              </h2>
+              <h2 class="profile-details">
+                <span class="profile-details-title">Joined - </span>Mon 22nd Feb
+                2013
+              </h2>
+            </div>
+            <div class="profile-complete-section">
+              <div class="profile-complete-flex">
+                <img
+                  class="percentage-img"
+                  src="/images/per.png"
+                  alt="percentage"
+                />
+                <div>
+                  <h1 class="profile-complete-title">Profile Completion</h1>
+                  <h2 class="profile-complete-subtitle">
+                    Please Complete Profile
+                  </h2>
+                  <button class="profile-complete-button">COMPLETE</button>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <main class="user-dashboard">
+          <div class="dashboard-nav">
+            <div class="nav-flex">
+              <ion-icon class="nav-icons" name="home"></ion-icon>
+              <h1 class="nav-maintitle">DASHBOARD</h1>
+            </div>
+            <h1 class="nav-title">NEW CLAIMS</h1>
+            <h1 class="nav-title">COMPLETED CLAIMS</h1>
+            <h1 class="nav-title">PAST CLAIMS</h1>
+
+            <h1 class="nav-title">MEMBERS</h1>
+            <h1 class="nav-title">MY CLAIMS</h1>
+            <button class="claim-button">
+              <ion-icon class="claim-icon" name="wallet-outline"></ion-icon
+              >CLAIMS
+            </button>
+          </div>
+          <div class="dashboard-aboutus">
+            <div class="aboutflex">
+              <h1 class="Aboutfamily-title">About My Family</h1>
+              <ion-icon
+                class="about-icons"
+                name="ellipsis-horizontal-outline"
+              ></ion-icon>
+            </div>
+            <h1 class="nav-title aboutustitle">COVERED PERSON</h1>
+            <div class="aboutuspeople">
+              <img
+                class="about-users-photo"
+                src="/images/users/user1.jpg"
+                alt="user"
+              />
+              <img
+                class="about-users-photo"
+                src="/images/users/user2.jpg"
+                alt="user"
+              />
+            </div>
+            <h1 class="nav-title aboutustitle">BENEFICIARY PERSON</h1>
+            <div class="aboutuspeople">
+              <img
+                class="about-users-photo"
+                src="/images/users/user3.jpg"
+                alt="user"
+              />
+              <img
+                class="about-users-photo"
+                src="/images/users/user4.jpg"
+                alt="user"
+              />
+              <img
+                class="about-users-photo"
+                src="/images/users/user5.jpg"
+                alt="user"
+              />
+            </div>
+            <h1 class="nav-title aboutustitle">EMERGENCY PERSON</h1>
+            <div class="aboutuspeople">
+              <img
+                class="about-users-photo4"
+                src="/images/users/user6.jpg"
+                alt="user"
+              />
+              <img
+                class="about-users-photo4"
+                src="/images/users/user7.jpg"
+                alt="user"
+              />
+              <img
+                class="about-users-photo4"
+                src="/images/users/user8.jpg"
+                alt="user"
+              />
+              <img
+                class="about-users-photo4"
+                src="/images/users/user9.jpg"
+                alt="user"
+              />
+            </div>
+            <div class="aboutflex">
+              <h1 class="Aboutfamily-title aboutme">About Me</h1>
+              <ion-icon
+                class="about-icons aboutme-icons"
+                name="ellipsis-horizontal-outline"
+              ></ion-icon>
+            </div>
+            <h1 class="nav-title aboutmetop">EMAIL</h1>
+            <h1 class="aboutme-detials">hetgokani@gmail.com</h1>
+            <h1 class="nav-title aboutmetitle">PHONE</h1>
+            <h1 class="aboutme-detials">+91-789215654</h1>
+            <h1 class="nav-title aboutmetitle">ADDRESS</h1>
+            <h1 class="aboutme-detials">81 Queens, 7 block ,NYC</h1>
+            <h1 class="nav-title aboutmetitle">PLAN</h1>
+            <h1 class="aboutme-detials">100$</h1>
+            <h1 class="nav-title aboutmetitle">JOINED</h1>
+            <h1 class="aboutme-detials">Mon 22nd Feb 2013</h1>
+          </div>
+          <div class="dashboard-details">
+            <section class="peoplecounts">
+              <div class="people-claim-flex">
+                <main class="people-count">23</main>
+                <div class="people-claim-details">
+                  <h1 class="nav-title people">MY CLAIMS</h1>
+                </div>
+              </div>
+
+              <div class="people-claim-flex">
+                <main class="people-count">23</main>
+                <div class="people-claim-details">
+                  <h1 class="nav-title people">MY CLAIMS</h1>
+                </div>
+              </div>
+              <div class="people-claim-flex">
+                <main class="people-count">23</main>
+                <div class="people-claim-details">
+                  <h1 class="nav-title people">MY CLAIMS</h1>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </article>
+    </section>
   </body>
 </html>
