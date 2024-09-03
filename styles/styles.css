@@ -25,7 +25,7 @@ html {
 }
 .profile-content {
   width: 170vh;
-  height: 120rem;
+  height: 107rem;
   margin: 3rem 0 4rem 5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -369,23 +369,167 @@ html {
 
   align-items: center;
   justify-content: space-around;
-  margin: 4rem 0 0 2rem;
+  margin: 3rem 0 0 2rem;
 }
 .people-claim-flex {
   display: flex;
   align-items: center;
 
   background-color: white;
-
+  margin: 0 1rem 0 0;
   padding: 2rem;
 }
 .people-count {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Platypi", serif;
   border-right: 1px solid #615a5a9d;
   padding: 0 2rem 0 0;
 }
 .people {
   margin: 0 0 0 1rem;
-  color: #00af2c;
+  color: #615a5a9d;
+}
+.img-collection {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: -1rem;
+  border: 2px solid white;
+}
+.img-collection:last-child {
+  margin: 0;
+}
+.img-count-flex {
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem 0 1rem;
+}
+.peopleprofile-grid {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  height: 53rem;
+  margin: 1rem;
+}
+
+.activity {
+  background-color: white;
+  height: 50rem;
+  margin-top: 1rem;
+}
+.peopleprofile-img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 0.5rem;
+}
+.peopleprofile-flex {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+.peopleprofile-detials {
+  margin: 0 0 0 2rem;
+}
+.people-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+  margin: 0 0 1.5rem 0;
+}
+.people-info-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 0;
+}
+.people-icons {
+  width: 2rem;
+  height: 2rem;
+  color: #837d75b6;
+}
+.peopledes-title {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+.pay-button {
+  color: white;
+  background-color: #fca424;
+  border: none;
+  padding: 0.5rem 1.7rem;
+  margin: 0 0 0 7rem;
+}
+.peopledes-des {
+  color: #837d75;
+  font-weight: 400;
+}
+.activity-area {
+  margin: 2.5rem 0 0 2rem;
+}
+.activity-title {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #444040c9;
+  margin: 0 2.5rem 0rem 0;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #837d75b6;
+}
+.blue-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 25, 245, 0.986);
+  border-radius: 50%;
+
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+.dot-flex {
+  display: flex;
+  align-items: center;
+}
+.activity-class {
+  margin: 2rem 0 0 2rem;
+}
+.activity-titles {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  color: black;
+}
+.activity-des {
+  margin: 0.8rem 2.5rem 0rem 2rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #837d75cb;
+}
+.subdes {
+  color: rgba(128, 114, 114, 0.445);
+}
+.orangeborder {
+  border-right: 3px solid #fca424;
+  position: absolute;
+  height: 2.3rem;
+  width: 1rem;
+  z-index: 9999;
+  top: 115%;
+  left: 83%;
+}
+.orange-dot {
+  background-color: #fca424;
+}
+.green-dot {
+  background-color: #23a829;
+}
+.pay-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pay-button:hover {
+  color: white;
+  background-color: #1eb910;
+  cursor: pointer;
 }
