@@ -9,6 +9,11 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
@@ -17,6 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,10 +42,9 @@
       <div class="bg-shapes">
         <div class="yellow-circle"></div>
         <div class="grey-box"></div>
-        <div class="square1"></div>
+
         <div class="bubble"></div>
         <div class="bubble2"></div>
-        <div class="orangeborder"></div>
       </div>
       <!-- main area for content -->
 
@@ -42,7 +52,7 @@
         <!-- header content with nav bar -->
         <div class="header-bg">
           <header class="header-flex">
-            <img class="logo" src="/images/logo.png" alt="logo" />
+            <img class="logo" src="/images/logo (2).png" alt="logo" />
             <nav class="header-flex">
               <button class="need-help-button">NEED HELP</button>
               <div>
@@ -79,36 +89,42 @@
                 2013
               </h2>
             </div>
-            <div class="profile-complete-section">
-              <div class="profile-complete-flex">
-                <img
-                  class="percentage-img"
-                  src="/images/per.png"
-                  alt="percentage"
-                />
+            <section class="profile-status-flex">
+              <div>
+                <div class="profile-complete-section">
+                  <div class="profile-complete-flex">
+                    <div class="progress"></div>
+                    <h1 class="percentage-value">75%</h1>
+                    <div>
+                      <h1 class="profile-complete-title">Profile Completion</h1>
+                      <h2 class="profile-complete-subtitle">
+                        Please Complete Profile
+                      </h2>
+                      <button class="profile-complete-button">COMPLETE</button>
+                    </div>
+                  </div>
+                </div>
                 <div>
-                  <h1 class="profile-complete-title">Profile Completion</h1>
-                  <h2 class="profile-complete-subtitle">
-                    Please Complete Profile
-                  </h2>
-                  <button class="profile-complete-button">COMPLETE</button>
+                  <ion-icon class="camera" name="camera-outline"></ion-icon>
                 </div>
               </div>
-            </div>
+            </section>
           </main>
         </div>
         <main class="user-dashboard">
           <div class="dashboard-nav">
             <div class="nav-flex">
               <ion-icon class="nav-icons" name="home"></ion-icon>
-              <h1 class="nav-maintitle">DASHBOARD</h1>
+              <h1 class="nav-maintitle1">DASHBOARD</h1>
             </div>
-            <h1 class="nav-title">NEW CLAIMS</h1>
-            <h1 class="nav-title">COMPLETED CLAIMS</h1>
-            <h1 class="nav-title">PAST CLAIMS</h1>
+            <h1 class="nav-title1">NEW CLAIMS</h1>
+            <hr class="border" />
 
-            <h1 class="nav-title">MEMBERS</h1>
-            <h1 class="nav-title">MY CLAIMS</h1>
+            <h1 class="nav-title1">COMPLETED CLAIMS</h1>
+            <h1 class="nav-title1">PAST CLAIMS</h1>
+
+            <h1 class="nav-title1">MEMBERS</h1>
+            <h1 class="nav-title1">MY CLAIMS</h1>
             <button class="claim-button">
               <ion-icon class="claim-icon" name="wallet-outline"></ion-icon
               >CLAIMS
@@ -199,7 +215,7 @@
               <div class="people-claim-flex">
                 <main class="people-count">23</main>
                 <div class="people-claim-details">
-                  <h1 class="nav-title people">MY CLAIMS</h1>
+                  <h1 class="nav-title people bold">MY CLAIMS</h1>
                   <section class="img-count-flex">
                     <img
                       class="img-collection"
@@ -218,16 +234,17 @@
                     />
                     <img
                       class="img-collection"
-                      src="/images/imagenumber.jpg"
-                      alt="total-numbers"
+                      src="/images/users/user11.jpg"
+                      alt="user"
                     />
+                    <h1 class="img-text">+32</h1>
                   </section>
                 </div>
               </div>
               <div class="people-claim-flex">
                 <main class="people-count">76</main>
                 <div class="people-claim-details">
-                  <h1 class="nav-title people">NEW MEMBERS</h1>
+                  <h1 class="nav-title people bold">NEW MEMBERS</h1>
                   <section class="img-count-flex">
                     <img
                       class="img-collection"
@@ -246,16 +263,17 @@
                     />
                     <img
                       class="img-collection"
-                      src="/images/imagenumber.jpg"
-                      alt="total-numbers"
+                      src="/images/users/user11.jpg"
+                      alt="user"
                     />
+                    <h1 class="img-text">+32</h1>
                   </section>
                 </div>
               </div>
               <div class="people-claim-flex">
                 <main class="people-count">102</main>
                 <div class="people-claim-details">
-                  <h1 class="nav-title people">TOTAL CLAIMS</h1>
+                  <h1 class="nav-title people bold">TOTAL CLAIMS</h1>
                   <section class="img-count-flex">
                     <img
                       class="img-collection"
@@ -274,9 +292,10 @@
                     />
                     <img
                       class="img-collection"
-                      src="/images/imagenumber.jpg"
-                      alt="total-numbers"
+                      src="/images/users/user11.jpg"
+                      alt="user"
                     />
+                    <h1 class="img-text">+32</h1>
                   </section>
                 </div>
               </div>
@@ -444,50 +463,86 @@
                 <section class="activity-area">
                   <h1 class="activity-title">ACTIVITY</h1>
                 </section>
+
                 <!-- ******ACTIVITY SUB GROUP 1 ******** -->
-                <main class="activity-class">
-                  <section class="dot-flex">
-                    <div class="blue-dot"></div>
-                    <h1 class="activity-titles">Claimed $2000</h1>
-                  </section>
-                  <h1 class="activity-des">
-                    23 members are got claimed in washington , dc.
-                  </h1>
-                  <h1 class="activity-des subdes">5:30 PM</h1>
-                </main>
-                <!-- ******ACTIVITY SUB GROUP 2 ******** -->
-                <main class="activity-class">
-                  <section class="dot-flex">
-                    <div class="blue-dot orange-dot"></div>
-                    <h1 class="activity-titles">102 New Members</h1>
-                  </section>
-                  <h1 class="activity-des">
-                    We have 102 registrations check out there profiles.
-                  </h1>
-                  <h1 class="activity-des subdes">5:30 PM</h1>
-                </main>
-                <!-- ******ACTIVITY SUB GROUP 3 ******** -->
-                <main class="activity-class">
-                  <section class="dot-flex">
-                    <div class="blue-dot green-dot"></div>
-                    <h1 class="activity-titles">3 Claims are waiting</h1>
-                  </section>
-                  <h1 class="activity-des">
-                    Please contribute them, they are waiting for your help.
-                  </h1>
-                  <h1 class="activity-des subdes">5:30 PM</h1>
-                </main>
-                <!-- ******ACTIVITY SUB GROUP 4 ******** -->
-                <main class="activity-class">
-                  <section class="dot-flex">
-                    <div class="blue-dot"></div>
-                    <h1 class="activity-titles">102 New Members</h1>
-                  </section>
-                  <h1 class="activity-des">
-                    We have 102 registrations check out there profiles.
-                  </h1>
-                  <h1 class="activity-des subdes">5:30 PM</h1>
-                </main>
+                <div>
+                  <hr class="connecting-line" />
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot"></div>
+                      <h1 class="activity-titles">Claimed $2000</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      23 members are got claimed in washington , dc.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+
+                  <!-- ******ACTIVITY SUB GROUP 2 ******** -->
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot orange-dot"></div>
+                      <h1 class="activity-titles">102 New Members</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      We have 102 registrations check out there profiles.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+
+                  <!-- ******ACTIVITY SUB GROUP 3 ******** -->
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot green-dot"></div>
+                      <h1 class="activity-titles">3 Claims are waiting</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      Please contribute them, they are waiting for your help.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+                  <!-- ******ACTIVITY SUB GROUP 4 ******** -->
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot"></div>
+                      <h1 class="activity-titles">102 New Members</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      We have 102 registrations check out there profiles.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot orange-dot"></div>
+                      <h1 class="activity-titles">102 New Members</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      We have 102 registrations check out there profiles.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot orange-dot"></div>
+                      <h1 class="activity-titles">102 New Members</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      We have 102 registrations check out there profiles.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+                  <main class="activity-class">
+                    <section class="dot-flex">
+                      <div class="blue-dot"></div>
+                      <h1 class="activity-titles">Claimed $2000</h1>
+                    </section>
+                    <h1 class="activity-des">
+                      23 members are got claimed in washington , dc.
+                    </h1>
+                    <h1 class="activity-des subdes">5:30 PM</h1>
+                  </main>
+                </div>
               </div>
             </section>
           </div>
