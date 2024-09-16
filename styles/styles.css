@@ -20,7 +20,7 @@ html {
 }
 
 .main-container {
-  height: 200rem;
+  height: 130rem;
 }
 .profile-content {
   width: 170vh;
@@ -183,21 +183,24 @@ html {
   font-family: "Rubik", sans-serif;
 
   font-style: normal;
-  font-size: 2.3rem;
+  font-weight: normal;
+  font-size: 2.1rem;
 
   color: white;
   margin: 0 0 1.5rem 0;
 }
 
 .profile-details {
-  font-family: "Rubik", sans-serif;
-  color: white;
+  font-family: sans-serif;
+  color: #ffffffd3;
   font-size: 1.2rem;
   margin: 0 0 0.8rem 0;
+  font-weight: normal;
 }
 .profile-details-title {
-  font-family: "Rubik", sans-serif;
-  color: rgb(190, 154, 154);
+  font-family: sans-serif;
+  color: #cdcdcdea;
+  font-weight: normal;
 }
 .profile-complete-section {
   background-color: rgba(127, 131, 134, 0.315);
@@ -217,8 +220,8 @@ html {
 .profile-complete-title,
 .profile-complete-subtitle {
   font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
-
+  font-family: sans-serif;
+  font-weight: normal;
   font-style: normal;
   color: white;
 }
@@ -239,7 +242,7 @@ html {
 .profile-complete-button:hover {
   color: white;
   cursor: pointer;
-  background-color: #39e7e770;
+  background-color: #c47f17;
 }
 /* ---------------------------- */
 /*    DASHBOARD SECTION  */
@@ -306,11 +309,15 @@ html {
   color: #cdcdcd;
   transition: all 0.2s ease-in;
 }
+
 .nav-title1,
 .nav-maintitle1 {
   font-family: sans-serif;
   font-size: 1.2rem;
   color: #cdcdcd;
+  background-color: #f8f9fa;
+  border: none;
+  padding: 2rem 0rem;
   transition: all 0.2s ease-in;
 }
 .nav-title1:hover {
@@ -320,6 +327,15 @@ html {
   padding-bottom: 2rem;
   margin-top: 2.3rem;
   cursor: pointer;
+  transform: translateY(-10px);
+}
+.nav-flex {
+  padding: 0rem;
+  border-bottom: 2px solid #fca424;
+}
+.nav-maintitle1 {
+  padding: 0;
+  border: none;
 }
 
 .percentage-value {
@@ -341,9 +357,8 @@ html {
   height: 6.5rem;
   width: 6.5rem;
   border-radius: 50%;
-  top: 14.3rem;
-  left: 96.6rem;
-
+  top: 14.2rem;
+  left: 95rem;
   border: 0.4rem solid #fca424;
   background-color: transparent;
   border-top-color: rgb(167, 151, 151);
@@ -362,7 +377,7 @@ html {
 }
 .nav-maintitle1 {
   font-weight: bold;
-  border-bottom: 2px solid #fca424;
+
   color: black;
   padding-bottom: 2rem;
   margin-top: 2.3rem;
@@ -381,12 +396,15 @@ html {
 }
 .claim-button:hover {
   color: #ffffff;
-  background-color: #ff0b0bbd;
+  background-color: #12916f;
   cursor: pointer;
 }
 .claim-icon {
   width: 1.2rem;
   height: 1.2rem;
+}
+.dashboard-nav::-webkit-scrollbar {
+  display: none;
 }
 /* ---------------------------- */
 /*    ABOUT US   SECTION  */
@@ -458,7 +476,7 @@ html {
 
   align-items: center;
   justify-content: space-around;
-  margin: 3rem 0 0 2rem;
+  margin: 2rem 0 0 0rem;
 }
 .people-claim-flex {
   display: flex;
@@ -466,14 +484,20 @@ html {
 
   background-color: white;
   margin: 0 1rem 0 2rem;
-  padding: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem 3rem;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 .people-claim-flex:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
   transform: translateY(-3px);
   transition: all 0.2s ease-in;
+}
+.people-claim-flex:last-child {
+  margin: 0 1rem 0 2rem;
+  padding: 2rem;
 }
 
 .people-count {
@@ -481,7 +505,7 @@ html {
   font-family: "Dosis", sans-serif;
   border-right: 1px solid #615a5a9d;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
   padding: 0 2rem 0 0;
 }
@@ -524,8 +548,9 @@ html {
   height: 50rem;
   margin-top: 1rem;
   display: flex;
-
+  overflow-y: scroll;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .peopleprofile-img {
   width: 14rem;
@@ -538,7 +563,7 @@ html {
   padding: 1rem;
   background-color: white;
   margin: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .peopleprofile-flex:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -594,7 +619,16 @@ html {
   color: #444040c9;
   margin: 0.5rem 2.5rem 1.5rem 0;
   padding: 0 0 0.5rem 0;
+  scrollbar-width: none;
   border-bottom: 1px solid #837d75b6;
+  overflow-y: scroll;
+}
+.activity-area::-webkit-scrollbar {
+  display: none;
+}
+
+.activity::-webkit-scrollbar {
+  display: none;
 }
 .blue-dot {
   width: 10px;
@@ -609,10 +643,10 @@ html {
 .connecting-line {
   height: 42rem;
   position: absolute;
-  width: 0.5px;
-  margin: 2.5rem 0 0 2.4rem;
+  width: 0px;
+  margin: 2.5rem 0 0 2.5rem;
 
-  color: #837d7594;
+  color: #837d75b6;
 }
 .dot-flex {
   display: flex;
@@ -625,12 +659,23 @@ html {
   font-family: sans-serif;
   font-size: 1.3rem;
   color: black;
+  transition: all 0.3s ease-in;
+}
+.activity-titles:hover {
+  color: #dd8e17;
+  cursor: pointer;
 }
 .activity-des {
   margin: 0.8rem 2.5rem 0rem 2rem;
   font-size: 1.2rem;
   font-family: sans-serif;
   color: #837d75cb;
+  transform: 0;
+}
+.activity-des:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.555);
+  transition: all 0.3s ease-in;
 }
 .subdes {
   color: rgba(128, 114, 114, 0.445);
@@ -658,7 +703,26 @@ html {
   gap: 0.5rem;
 }
 .pay-button:hover {
-  color: white;
-  background-color: #f80808;
+  color: rgb(255, 255, 255);
+  background-color: #c27f1b;
   cursor: pointer;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 1rem;
+  height: 1px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fca424;
+  border-radius: 1rem;
+  border: 0.3rem solid white;
+  border-bottom: 25rem solid rgb(255, 255, 255);
+  border-radius: 1rem;
 }
